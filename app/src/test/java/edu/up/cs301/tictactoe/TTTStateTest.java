@@ -11,10 +11,22 @@ public class TTTStateTest {
         TTTState testState = new TTTState();
         char place = testState.getPiece(-1,0);
         assertEquals('?', place);
+
+        testState.setPiece(0,0, 'O');
+        place = testState.getPiece(0,0);
+        assertEquals('O', place);
     }
 
     @Test
     public void setPiece() {
+        TTTState testState = new TTTState();
+        testState.setPiece(-1,0, 'X');
+        char place = testState.getPiece(-1,0);
+        assertEquals('?', place);
+
+        testState.setPiece(0,0, 'X');
+        place = testState.getPiece(0,0);
+        assertEquals('X', place);
     }
 
     @Test
