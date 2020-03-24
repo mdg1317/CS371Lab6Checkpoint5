@@ -23,5 +23,8 @@ public class TTTStateTest {
 
     @Test
     public void setWhoseMove() {
+        TTTState testState = new TTTState();
+        testState.setWhoseMove(0);
+        assertEquals(0,testState.getWhoseMove());
     }
 }
