@@ -15,10 +15,16 @@ public class TTTStateTest {
 
     @Test
     public void setPiece() {
+
     }
 
     @Test
     public void getWhoseMove() {
+        TTTState testState = new TTTState();
+        testState.setWhoseMove(0);
+        int move = testState.getWhoseMove();
+        assertEquals(move, 0);
+
     }
 
     @Test
